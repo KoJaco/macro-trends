@@ -1,5 +1,6 @@
 import {
     Links,
+    LiveReload,
     Meta,
     Outlet,
     Scripts,
@@ -12,7 +13,7 @@ import {
     ThemeProvider,
     useTheme,
 } from "remix-themes";
-import { themeSessionResolver } from "./routes/sessions.server";
+import { themeSessionResolver } from "./sessions.server";
 
 import styles from "./tailwind.css?url";
 import clsx from "clsx";
@@ -70,6 +71,7 @@ export function App() {
                 <Outlet />
                 <ScrollRestoration />
                 <Scripts />
+                <LiveReload />
             </body>
         </html>
     );
