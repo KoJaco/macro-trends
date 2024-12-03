@@ -8,8 +8,8 @@ import { getLatestSummary } from "~/modules/summaries";
 
 export const meta: MetaFunction = () => {
     return [
-        { title: "New Remix App" },
-        { name: "description", content: "Welcome to Remix!" },
+        { title: "Macro Trends" },
+        { name: "description", content: "Welcome welcome." },
     ];
 };
 
