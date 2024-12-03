@@ -10,11 +10,12 @@ declare module "@remix-run/node" {
 
 export default defineConfig({
     build: {
-        target: 'ES2022',
+        target: "ES2022",
     },
     plugins: [
         remix({
-            serverModuleFormat: 'esm',
+            serverModuleFormat: "esm",
+            serverBuildFile: "build/server/index.js",
             future: {
                 v3_fetcherPersist: true,
                 v3_relativeSplatPath: true,

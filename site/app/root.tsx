@@ -6,6 +6,7 @@ import {
     Scripts,
     ScrollRestoration,
     useLoaderData,
+    useRouteError,
 } from "@remix-run/react";
 import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 import {
@@ -48,6 +49,25 @@ export default function AppWithProviders() {
         >
             <App />
         </ThemeProvider>
+    );
+}
+
+export function ErrorBoundary() {
+    const error = useRouteError();
+    console.error(error);
+    return (
+        <html lang="en">
+            <head>
+                <title>Oh no!</title>
+                <Meta />
+                <Links />
+            </head>
+            <body>
+                Something went wrong on our end. We&apos;ll get it fixed as soon
+                as possible!
+                <Scripts />
+            </body>
+        </html>
     );
 }
 
