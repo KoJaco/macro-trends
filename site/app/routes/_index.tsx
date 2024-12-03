@@ -47,7 +47,7 @@ export default function Index() {
     };
 
     return (
-        <div className="flex h-auto min-h-screen justify-center overflow-y-auto py-20 bg-background dark:bg-foreground">
+        <div className="flex h-auto min-h-screen justify-center overflow-y-auto py-20 bg-background dark:bg-foreground md:mx-0 mx-4">
             <div className="flex flex-col items-center gap-16">
                 {/* <header className="flex flex-col items-center gap-9 max-w-3xl">
                     <ThemeToggle />
